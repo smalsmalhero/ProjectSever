@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 CHANNEL_ACCESS_TOKEN = 'AU/QDri2KE1NXmPy3qxcO7hY9+GmviLxov3guTlLUT5XfpsrRlXA7we4I32aRebmsHxr/MMl6ywNJLHSD/qmBRvYmFt0esCWnAFiGkYaijl9D05w1eB3+lgscrfxpe8WLtKF3kdoYQCY5dObj0aTXwdB04t89/1O/w1cDnyilFU='
 CHANNEL_SECRET = '9cf048df757b3f7caabf30a89c853c9a'
-handler = WebhookHandler(os.getenv(CHANNEL_SECRET))
 # LINE 回傳圖片函式
 def reply_image(msg, rk, token):
     headers = {'Authorization':f'Bearer {token}','Content-Type':'application/json'}    
