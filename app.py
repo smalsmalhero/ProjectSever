@@ -49,7 +49,7 @@ def push_message(msg, uid, token):
 
 app = Flask(__name__)
 
-@app.route("/", methods=['GET','POST'])
+@app.route("/bot", methods=['GET','POST'])
 
 def home():
   line_bot_api = LineBotApi(os.getenv(CHANNEL_ACCESS_TOKEN))
