@@ -4,7 +4,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, LocationSendMessage, StickerSendMessage
 # 載入 json 標準函式庫，處理回傳的資料格式
 import requests, json, time, statistics # import statistics 函式庫
-
+import os
 app = Flask(__name__)
 
 CHANNEL_ACCESS_TOKEN = 'AU/QDri2KE1NXmPy3qxcO7hY9+GmviLxov3guTlLUT5XfpsrRlXA7we4I32aRebmsHxr/MMl6ywNJLHSD/qmBRvYmFt0esCWnAFiGkYaijl9D05w1eB3+lgscrfxpe8WLtKF3kdoYQCY5dObj0aTXwdB04t89/1O/w1cDnyilFU='
@@ -71,7 +71,7 @@ def home():
   except:
     print('error')
 
-import os
+
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
