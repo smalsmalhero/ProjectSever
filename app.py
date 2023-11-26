@@ -69,6 +69,7 @@ def home():
     return msg
   except:
     print('error')
+      return "ok"
 
 
 if __name__ == "__main__":
