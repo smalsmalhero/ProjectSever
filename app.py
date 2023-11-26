@@ -4,7 +4,6 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, LocationSendMessage, StickerSendMessage
 # 載入 json 標準函式庫，處理回傳的資料格式
 import requests, json, time, statistics # import statistics 函式庫
-from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
