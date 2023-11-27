@@ -49,8 +49,7 @@ def push_message(msg, uid, token):
 
 app = Flask(__name__)
 
-@app.route("/bot", methods=['GET','POST'])
-
+@app.route("/callback", methods=['GET','POST'])
 def home():
   line_bot_api = LineBotApi(os.getenv(CHANNEL_ACCESS_TOKEN))
   try:
@@ -69,7 +68,6 @@ def home():
     return msg
   except:
     print('error')
-  return "ok"
 
 
 if __name__ == "__main__":
